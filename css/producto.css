@@ -1,0 +1,70 @@
+/* ===== producto.css — ficha de producto ===== */
+
+.back-link{
+  display: inline-block;
+  margin-top: 26px;
+  font-size: 0.86rem;
+  color: var(--ink-dim);
+  text-decoration: none;
+}
+.back-link:hover{ color: var(--ink); }
+
+.product{
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 40px;
+  margin-top: 22px;
+}
+@media (max-width: 820px){ .product{ grid-template-columns: 1fr; } }
+
+.cover{
+  aspect-ratio: 4 / 3;
+  background:
+    repeating-linear-gradient(135deg, var(--teal) 0px, var(--teal) 14px, var(--teal-dim) 14px, var(--teal-dim) 28px);
+  border: 1px solid var(--ink);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--paper);
+  text-align: center;
+}
+.cover-label{ font-size: 1.6rem; font-weight: 700; letter-spacing: 0.02em; }
+.cover-sub{ font-size: 0.72rem; opacity: 0.85; }
+
+.thumbs{
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+.thumb{
+  aspect-ratio: 4 / 3;
+  border: 1px solid var(--card-line);
+  background: linear-gradient(160deg, var(--paper-raised), var(--card-line));
+}
+.thumb-note{
+  margin-top: 10px;
+  font-size: 0.78rem;
+  color: var(--ink-dim);
+}
+
+.product-info h1{ font-size: clamp(1.7rem, 4vw, 2.3rem); margin-top: 10px; }
+.product-info .genre{ color: var(--ink-dim); font-size: 0.82rem; margin: 8px 0 16px; }
+.product-info .lede{ color: var(--ink-dim); max-width: 56ch; }
+
+.fact-grid{
+  margin: 24px 0 26px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 22px;
+}
+@media (max-width: 480px){ .fact-grid{ grid-template-columns: 1fr; } }
+.fact-grid > div{ border-top: 1px solid var(--card-line); padding-top: 8px; }
+.fact-k{ display: block; font-family: ui-monospace, monospace; font-size: 0.7rem; color: var(--ink-dim); }
+.fact-v{ display: block; margin-top: 3px; font-size: 0.94rem; }
+
+.notes{ margin-top: 54px; max-width: 68ch; }
+.notes h2{ font-size: 1.2rem; margin-bottom: 12px; }
+.notes p{ color: var(--ink-dim); margin-top: 10px; font-size: 0.94rem; }

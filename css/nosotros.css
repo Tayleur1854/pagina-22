@@ -1,0 +1,32 @@
+/* ===== nosotros.css — página "El archivo" ===== */
+
+.page-head{ padding: 40px 0 10px; max-width: 68ch; }
+.page-head h1{ font-size: clamp(1.6rem, 3.8vw, 2.2rem); line-height: 1.15; }
+.page-head .lede{ margin-top: 14px; color: var(--ink-dim); }
+
+.method{ margin-top: 48px; }
+.method h2{ font-size: 1.25rem; margin-bottom: 22px; }
+
+.steps{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+@media (max-width: 760px){ .steps{ grid-template-columns: 1fr; } }
+
+.step{
+  border-top: 2px solid var(--ink);
+  padding-top: 14px;
+}
+.step-n{ color: var(--rust); font-size: 0.8rem; }
+.step h3{ margin-top: 8px; font-size: 1.02rem; }
+.step p{ margin-top: 8px; color: var(--ink-dim); font-size: 0.9rem; }
+
+.honesty{
+  margin-top: 50px;
+  max-width: 64ch;
+  border-left: 3px solid var(--ink);
+  padding-left: 20px;
+}
+.honesty h2{ font-size: 1.15rem; }
+.honesty p{ margin-top: 10px; color: var(--ink-dim); }

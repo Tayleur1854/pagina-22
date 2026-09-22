@@ -1,0 +1,36 @@
+/* ===== contacto.css — página de contacto ===== */
+
+.page-head{ padding: 40px 0 10px; max-width: 66ch; }
+.page-head h1{ font-size: clamp(1.7rem, 4vw, 2.3rem); }
+.page-head .lede{ margin-top: 14px; color: var(--ink-dim); }
+
+.contact-grid{
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+@media (max-width: 700px){ .contact-grid{ grid-template-columns: 1fr; } }
+
+.contact-card{
+  display: block;
+  text-decoration: none;
+  background: var(--paper-raised);
+  border: 1px solid var(--ink);
+  padding: 22px 24px;
+}
+.contact-card:hover{ box-shadow: 5px 5px 0 var(--card-line); }
+.contact-card h3{
+  margin-top: 8px;
+  font-family: ui-monospace, monospace;
+  font-size: 1.02rem;
+  color: var(--teal-dim);
+  word-break: break-word;
+}
+.contact-card p{ margin-top: 10px; color: var(--ink-dim); font-size: 0.89rem; }
+
+.faq{ margin-top: 52px; max-width: 66ch; }
+.faq h2{ font-size: 1.2rem; margin-bottom: 18px; }
+.faq-item{ padding: 16px 0; border-top: 1px solid var(--card-line); }
+.faq-item h4{ font-size: 0.98rem; }
+.faq-item p{ margin-top: 8px; color: var(--ink-dim); font-size: 0.9rem; }

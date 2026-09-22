@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Catálogo — Cartucho Fantasma</title>
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/catalogo.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <a href="index.html" class="brand">
+      <span class="mark">Cartucho Fantasma</span>
+      <span class="sub">archivo de software inexistente</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="tabs" id="tabs">
+      <a href="index.html">Inicio</a>
+      <a href="catalogo.html" aria-current="page">Catálogo</a>
+      <a href="producto.html">Éxodo 64</a>
+      <a href="sobre-nosotros.html">El archivo</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-head">
+    <div class="kicker">Ocho piezas, verificadas por separado</div>
+    <h1>El catálogo completo</h1>
+    <p>Cada entrada tiene un grado distinto de certeza: desde prototipos que hemos tenido en la mano hasta rumores que circulan solo de boca en boca. Filtra por estado para ver cuánto sabemos realmente de cada una.</p>
+  </div>
+
+  <div class="filters" role="group" aria-label="Filtrar por estado">
+    <button class="filter-btn active" data-filter="todos">Todos (8)</button>
+    <button class="filter-btn" data-filter="prototipo">Prototipo</button>
+    <button class="filter-btn" data-filter="beta">Beta filtrada</button>
+    <button class="filter-btn" data-filter="mito">Mito de convención</button>
+    <button class="filter-btn" data-filter="leyenda">Leyenda urbana</button>
+    <button class="filter-btn" data-filter="rumor">Rumor de foro</button>
+  </div>
+
+  <div class="grid" id="catalogGrid">
+
+    <article class="game-card" data-estado="prototipo">
+      <div class="card-top">
+        <span class="mono">N.º 0042</span>
+        <span class="badge prototipo"><span class="dot"></span>Prototipo confirmado</span>
+      </div>
+      <h3>Éxodo 64</h3>
+      <p class="genre mono">Estrategia espacial · 1997</p>
+      <p class="desc">Encontrado en el disco duro de un estudio cerrado en 1998. La pieza más completa del archivo.</p>
+      <a class="card-link" href="producto.html">Ficha completa →</a>
+    </article>
+
+    <article class="game-card" data-estado="leyenda">
+      <div class="card-top">
+        <span class="mono">N.º 0017</span>
+        <span class="badge leyenda"><span class="dot"></span>Leyenda urbana</span>
+      </div>
+      <h3>El Faro de Nadie</h3>
+      <p class="genre mono">Terror atmosférico · 2003</p>
+      <p class="desc">Mencionado una sola vez, en una revista, con una captura borrosa que nadie ha vuelto a localizar.</p>
+    </article>
+
+    <article class="game-card" data-estado="beta">
+      <div class="card-top">
+        <span class="mono">N.º 0058</span>
+        <span class="badge beta"><span class="dot"></span>Beta filtrada</span>
+      </div>
+      <h3>Chatarra Cósmica</h3>
+      <p class="genre mono">Roguelite de desguace espacial · 2011</p>
+      <p class="desc">Una ROM de beta circula entre coleccionistas desde hace años. Faltan dos tercios del mapa final.</p>
+    </article>
+
+    <article class="game-card" data-estado="mito">
+      <div class="card-top">
+        <span class="mono">N.º 0009</span>
+        <span class="badge mito"><span class="dot"></span>Mito de convención</span>
+      </div>
+      <h3>Kilómetro Cero</h3>
+      <p class="genre mono">Carreras callejeras · 1999</p>
+      <p class="desc">Se mostró en una única feria del sector. Solo quedan testimonios de quienes lo probaron esa tarde.</p>
+    </article>
+
+    <article class="game-card" data-estado="prototipo">
+      <div class="card-top">
+        <span class="mono">N.º 0031</span>
+        <span class="badge prototipo"><span class="dot"></span>Cancelado, con build jugable</span>
+      </div>
+      <h3>Nudo Marino</h3>
+      <p class="genre mono">Puzzle náutico · 2015</p>
+      <p class="desc">Llegó a fase de pruebas internas antes de cerrarse el estudio. Existen capturas y un vídeo de nueve minutos.</p>
+    </article>
+
+    <article class="game-card" data-estado="beta">
+      <div class="card-top">
+        <span class="mono">N.º 0064</span>
+        <span class="badge beta"><span class="dot"></span>Demo perdida</span>
+      </div>
+      <h3>Turno de Noche en la 24H</h3>
+      <p class="genre mono">Narrativo de tienda nocturna · 2020</p>
+      <p class="desc">Se repartió en un pendrive durante una jam local. Ningún asistente ha conseguido conservar la copia.</p>
+    </article>
+
+    <article class="game-card" data-estado="rumor">
+      <div class="card-top">
+        <span class="mono">N.º 0003</span>
+        <span class="badge rumor"><span class="dot"></span>Solo existe en bocetos</span>
+      </div>
+      <h3>Reinado de Hojalata</h3>
+      <p class="genre mono">Estrategia por turnos steampunk · 1994</p>
+      <p class="desc">Nunca pasó de la fase de diseño. Lo que queda son cuadernos de un desarrollador ya jubilado.</p>
+    </article>
+
+    <article class="game-card" data-estado="rumor">
+      <div class="card-top">
+        <span class="mono">N.º 0025</span>
+        <span class="badge rumor"><span class="dot"></span>Rumor de foro</span>
+      </div>
+      <h3>Vecindario Fantasma</h3>
+      <p class="genre mono">Sandbox social de terror ligero · 2008</p>
+      <p class="desc">Apareció mencionado en un hilo de foro de 2008 y nunca más. Ni una sola captura ha sobrevivido.</p>
+    </article>
+
+  </div>
+
+  <p class="empty-state" id="emptyState" hidden>No hay piezas archivadas con ese estado todavía.</p>
+
+</main>
+
+<footer>
+  Cartucho Fantasma · archivo independiente de software que nunca llegó a existir del todo
+</footer>
+
+<script src="js/nav.js"></script>
+<script src="js/catalogo.js"></script>
+</body>
+</html>
